@@ -87,7 +87,19 @@ body{
   border:2px solid var(--primary);
   color:var(--primary);
 }
+a.btn,
+a.btn:visited,
+a.btn:focus,
+a.btn:active {
+  color: var(--primary);
+  text-decoration: none;
+}
 
+a.btn.outline:hover {
+  color: #fff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
 /* SECTIONS */
 .section-title{
   font-size:22px;
@@ -469,6 +481,7 @@ document.getElementById("year").textContent=new Date().getFullYear();
 
 </body>
 </html>
+
 
 
 
