@@ -263,6 +263,31 @@ footer{
 .hero-img:hover img {
   transform: scale(1.08);
 }
+  /* ===== DARK MODE ===== */
+body.dark {
+  --bg: #181513;
+  --card: #1f1b18;
+  --primary: #d2b48c;
+  --accent: #b79c8b;
+  --text: #e6e1dd;
+  --soft: #2b2622;
+}
+
+/* smooth transition */
+body,
+.card,
+.hero,
+.project,
+.btn {
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+/* button toggle style */
+#themeToggle {
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 
 
@@ -284,6 +309,11 @@ footer{
 
 <body>
 <div class="wrap">
+  <div style="display:flex;justify-content:flex-end;margin-bottom:10px">
+  <button id="themeToggle" class="btn outline" type="button">
+    🌙 Dark Mode
+  </button>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -470,9 +500,33 @@ document.getElementById("year").textContent=new Date().getFullYear();
 
   observer.observe(document.querySelector("#skills") || document.querySelector(".section-title"));
 </script>
+  <script>
+  const toggle = document.getElementById("themeToggle");
+  const body = document.body;
+
+  // load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    toggle.textContent = "☀️ Light Mode";
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggle.textContent = "☀️ Light Mode";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggle.textContent = "🌙 Dark Mode";
+    }
+  });
+</script>
+
 
 </body>
 </html>
+
 
 
 
