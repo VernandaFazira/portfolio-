@@ -195,7 +195,14 @@ footer{
   transition: 0.3s ease;
 }
 
-.social-btn:hover {
+.social-btn {
+  text-decoration: none;
+}
+
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:active,
+.social-btn:visited {
   border-color: var(--primary);
   color: #fff;
   background: var(--primary);
@@ -465,6 +472,7 @@ document.getElementById("year").textContent=new Date().getFullYear();
 
 </body>
 </html>
+
 
 
 
