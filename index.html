@@ -263,6 +263,48 @@ footer{
 .hero-img:hover img {
   transform: scale(1.08);
 }
+  /* CERTIFICATES */
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.certificate {
+  background: var(--card);
+  border: 1px solid var(--soft);
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.certificate:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.certificate img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.certificate h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.certificate span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
   /* ===== DARK MODE ===== */
 body.dark {
   --bg: #181513;
@@ -399,6 +441,76 @@ A school information website built to digitize announcements, profile pages, gal
   </div>
 </div>
 
+<!-- CERTIFICATES -->
+<div class="card">
+  <div class="section-title">Certificates</div>
+
+  <div class="certificates">
+
+    <div class="certificate">
+      <img src="img/cert1.png" alt="Certificate 1">
+      <h4>Belajar Dasar Manajemen Proyek</h4>
+      <span>Dicoding Indonesia</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert2.png" alt="Certificate 2">
+      <h4>Dasar Microsoft Excel</h4>
+      <span>BISA AI</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert3.png" alt="Certificate 3">
+      <h4>Database Fundamentals</h4>
+      <span>Independent Study</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert4.png" alt="Certificate 4">
+      <h4>Web Development Basics</h4>
+      <span>Learning X</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert5.png" alt="Certificate 5">
+      <h4>Laravel 10 Workshop</h4>
+      <span>Adaptable Consulting</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert6.png" alt="Certificate 6">
+      <h4>IT Support Fundamentals</h4>
+      <span>Internal Training</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert7.png" alt="Certificate 7">
+      <h4>SQL Query Basics</h4>
+      <span>Online Course</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert8.png" alt="Certificate 8">
+      <h4>Software Documentation</h4>
+      <span>Independent Study</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert9.png" alt="Certificate 9">
+      <h4>UI/UX Fundamentals</h4>
+      <span>Online Course</span>
+    </div>
+
+    <div class="certificate">
+      <img src="img/cert10.png" alt="Certificate 10">
+      <h4>Professional Ethics</h4>
+      <span>University Program</span>
+    </div>
+
+  </div>
+</div>
+
+
 
 <!-- PROJECTS -->
 <div class="card">
@@ -526,6 +638,7 @@ document.getElementById("year").textContent=new Date().getFullYear();
 
 </body>
 </html>
+
 
 
 
