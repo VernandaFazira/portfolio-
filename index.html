@@ -378,6 +378,26 @@ body.dark {
   --text: #e6e1dd;
   --soft: #2b2622;
 }
+  #lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+.certificate img {
+  cursor: zoom-in;
+}
+
 
 /* smooth transition */
 body,
@@ -411,7 +431,9 @@ body,
 }
 </style>
 </head>
-
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
 
 <body>
 <div class="wrap">
@@ -588,64 +610,67 @@ Focused on information systems, data processing, documentation, and basic system
 
   <div class="certificates">
 
-   <div class="certificate">
-  <a href="cert1.jpg" target="_blank">
-   <img src="cert1.jpg" class="cert-img" alt="Certificate">
-  </a>
+  <div class="certificate">
+  <img src="cert1.jpg" alt="Certificate"
+       onclick="openLightbox(this.src)">
   <h4>CERTIFICATE OF COMPLETION MICROSOFT SKILL FOR JOBS</h4>
   <span>KEMENKO & MICROSOFT</span>
 </div>
 
+<div class="certificate">
+  <img src="cert2.jpg" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>SERTIFICATE SOFTWARE DEVELOPMENT</h4>
+  <span>BNSP</span>
+</div>
 
-    <div class="certificate">
-      <img src="cert2.jpg" alt="Certificate 2">
-      <h4>SERTIFICATE SOFTWARE DEVELOPMENT</h4>
-      <span>BNSP</span>
-    </div>
+<div class="certificate">
+  <img src="Sertifikat Basic Excel.png" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Sertificate Basic Excel</h4>
+  <span>BISA.AI</span>
+</div>
 
-    <div class="certificate">
-      <img src="Sertifikat Basic Excel.png" alt="Certificate 3">
-      <h4>Sertificate Basic Excel</h4>
-      <span>BISA.AI</span>
-    </div>
+<div class="certificate">
+  <img src="Sertifikat 2.png" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Memulai Pemrograman Dengan Python</h4>
+  <span>Dicoding Indonesia</span>
+</div>
 
-    <div class="certificate">
-      <img src="Sertifikat 2.png" alt="Certificate 4">
-      <h4>Memulai Pemrograman Dengan Python</h4>
-      <span>Dicoding Indonesia</span>
-    </div>
+<div class="certificate">
+  <img src="Sertifikat 3.png" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Belajar Dasar Visualisasi Data</h4>
+  <span>Dicoding Indonesia</span>
+</div>
 
-    <div class="certificate">
-      <img src="Sertifikat 3.png" alt="Certificate 5">
-      <h4>Belajar Dasar Visualisasi Data</h4>
-      <span>Dicoding Indonesia</span>
-    </div>
+<div class="certificate">
+  <img src="Sertifikat.png" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Belajar Dasar Manajemen Proyek</h4>
+  <span>Dicoding Indonesia</span>
+</div>
 
-    <div class="certificate">
-      <img src="Sertifikat.png" alt="Certificate 6">
-      <h4> Belajar Dasar Manajemen Proyek</h4>
-      <span>Dicoding Indonesia</span>
-    </div>
+<div class="certificate">
+  <img src="kompe.jpg" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Full Stack Web Development Intermediate</h4>
+  <span>Learning X</span>
+</div>
 
-    <div class="certificate">
-      <img src="kompe.jpg" alt="Certificate 7">
-      <h4>Full Stack Web Development Intermediate</h4>
-      <span>Learning X</span>
-    </div>
+<div class="certificate">
+  <img src="penyelesain MSIB.jpg" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Sertifikat Penyelesaian MSIB</h4>
+  <span>Learning X</span>
+</div>
 
-    <div class="certificate">
-      <img src="penyelesain MSIB.jpg" alt="Certificate 8">
-      <h4>Sertifikat Penyelesaian MSIB</h4>
-      <span>Learning X</span>
-    </div>
-
-    <div class="certificate">
-      <img src="MSIB.jpg" alt="Certificate 9">
-      <h4>Sertifikat Keikut Sertaan Study Independen Bersertifikat</h4>
-      <span>Kemdikbut Ristek</span>
-    </div>
-
-  </div>
+<div class="certificate">
+  <img src="MSIB.jpg" alt="Certificate"
+       onclick="openLightbox(this.src)">
+  <h4>Sertifikat Keikut Sertaan Study Independen Bersertifikat</h4>
+  <span>Kemdikbut Ristek</span>
 </div>
 
 
@@ -801,12 +826,23 @@ document.getElementById("year").textContent=new Date().getFullYear();
     applyLang(currentLang);
   });
 </script>
+<script>
+function openLightbox(src) {
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
 
 
 
 
 </body>
 </html>
+
 
 
 
