@@ -390,7 +390,15 @@ body,
 
 <body>
 <div class="wrap">
-  <div style="display:flex;justify-content:flex-end;margin-bottom:10px">
+ <div style="display:flex;justify-content:flex-end;gap:10px;margin-bottom:10px">
+  <button id="langToggle" class="btn outline" type="button">
+    🇮🇩 ID
+  </button>
+
+  <button id="themeToggle" class="btn outline" type="button">
+    🌙 Dark Mode
+  </button>
+</div>
   <button id="themeToggle" class="btn outline" type="button">
     🌙 Dark Mode
   </button>
@@ -404,12 +412,16 @@ body,
 
   <div class="hero-text">
     <h1>Vernanda Fazira</h1>
-    <div class="role">IT Support · Database Administration · System Support</div>
+   <div class="role" data-en="IT Support · Database Administration · System Support"
+     data-id="IT Support · Administrasi Basis Data · Dukungan Sistem">
+  IT Support · Database Administration · System Support
+</div>
     
-    <p style="margin-top:12px;font-size:15px">
-      A fresh Information Systems graduate with experience in IT Support, basic database management, documentation, website maintenance, and operational admin tasks.
-      Detail-oriented, adaptive, and ready to contribute to technical & administrative workflows.
-    </p>
+<p style="margin-top:12px;font-size:15px"
+ data-en="A fresh Information Systems graduate with experience in IT Support, basic database management, documentation, website maintenance, and operational admin tasks. Detail-oriented, adaptive, and ready to contribute to technical & administrative workflows."
+ data-id="Lulusan baru Sistem Informasi dengan pengalaman di bidang IT Support, pengelolaan database dasar, dokumentasi, pemeliharaan website, serta tugas administrasi operasional. Teliti, adaptif, dan siap berkontribusi dalam alur kerja teknis maupun administratif.">
+A fresh Information Systems graduate with experience in IT Support, basic database management, documentation, website maintenance, and operational admin tasks.
+</p>
 
    <div style="margin-top:15px;display:flex;gap:10px;flex-wrap:wrap">
   <a href="https://www.linkedin.com/in/vernanda-fazira-943041288/" class="btn outline social-btn" target="_blank">LinkedIn</a>
@@ -439,10 +451,11 @@ body,
     </div>
   </div>
 
-  <p class="edu-desc">
-    Focused on information systems, data processing, documentation, and basic system support.
-    Completed academic projects related to website development and system documentation.
-  </p>
+  <p class="edu-desc"
+ data-en="Focused on information systems, data processing, documentation, and basic system support. Completed academic projects related to website development and system documentation."
+ data-id="Berfokus pada sistem informasi, pengolahan data, dokumentasi, dan dukungan sistem dasar. Menyelesaikan proyek akademik terkait pengembangan website dan dokumentasi sistem.">
+Focused on information systems, data processing, documentation, and basic system support.
+</p>
 </div>
 
 <!-- EXPERIENCE -->
@@ -470,7 +483,11 @@ A school information website built to digitize announcements, profile pages, gal
 
 <!-- SKILLS -->
 <div class="card">
-  <div class="section-title">Skills</div>
+  <div class="section-title"
+ data-en="Skills"
+ data-id="Keahlian">
+Skills
+</div>
 
   <div class="skill-box">
     <div class="skill-header">
@@ -692,10 +709,32 @@ document.getElementById("year").textContent=new Date().getFullYear();
     }
   });
 </script>
+  <script>
+  const langToggle = document.getElementById("langToggle");
+  let currentLang = localStorage.getItem("lang") || "en";
+
+  function applyLang(lang) {
+    document.querySelectorAll("[data-en]").forEach(el => {
+      el.textContent = el.dataset[lang];
+    });
+
+    langToggle.textContent = lang === "en" ? "🇮🇩 ID" : "🇺🇸 EN";
+    localStorage.setItem("lang", lang);
+  }
+
+  applyLang(currentLang);
+
+  langToggle.addEventListener("click", () => {
+    currentLang = currentLang === "en" ? "id" : "en";
+    applyLang(currentLang);
+  });
+</script>
+
 
 
 </body>
 </html>
+
 
 
 
