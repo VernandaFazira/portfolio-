@@ -304,6 +304,45 @@ footer{
   font-size: 12px;
   opacity: 0.7;
 }
+  /* ===== EDUCATION ===== */
+.education .edu-wrap{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.education .edu-logo{
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px;
+  border: 1px solid #e5e5e5;
+  transition: 0.3s ease;
+}
+
+.education .edu-logo:hover{
+  transform: scale(1.05);
+}
+
+.education .edu-text strong{
+  color: var(--primary);
+  font-size: 15px;
+}
+
+.education .edu-text span{
+  font-size: 13px;
+  color: #7a726d;
+}
+
+.education .edu-desc{
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 
   /* ===== DARK MODE ===== */
 body.dark {
@@ -381,20 +420,28 @@ body,
   </div>
 </section>
   <!-- EDUCATION -->
-<div class="card">
+<div class="card education">
   <div class="section-title">Education</div>
 
-  <p>
-    <strong>D3 Sistem Informasi</strong><br>
-    <span style="font-size:13px;color:#7a726d">
-      Fakultas Teknik dan Informatika<br>
-      IPK 3.90 / 4.00
-    </span>
-  </p>
+  <div class="edu-wrap">
+    <img 
+      src="ubsi.png" 
+      alt="Universitas Bina Sarana Informatika"
+      class="edu-logo"
+    >
 
-  <p style="margin-top:10px;font-size:14px">
-    Focused on information systems, data processing, documentation, and basic system support. 
-    Completed thesis projects related to website development and system documentation.
+    <div class="edu-text">
+      <strong>D3 Sistem Informasi</strong><br>
+      <span>
+        Universitas Bina Sarana Informatika (UBSI)<br>
+        IPK 3.90 / 4.00
+      </span>
+    </div>
+  </div>
+
+  <p class="edu-desc">
+    Focused on information systems, data processing, documentation, and basic system support.
+    Completed academic projects related to website development and system documentation.
   </p>
 </div>
 
@@ -649,6 +696,7 @@ document.getElementById("year").textContent=new Date().getFullYear();
 
 </body>
 </html>
+
 
 
 
