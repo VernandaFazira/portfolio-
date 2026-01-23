@@ -770,13 +770,13 @@ document.getElementById("year").textContent=new Date().getFullYear();
     }
   });
 </script>
-  <script>
+ <script>
   const langToggle = document.getElementById("langToggle");
   let currentLang = localStorage.getItem("lang") || "en";
 
   function applyLang(lang) {
     document.querySelectorAll("[data-en]").forEach(el => {
-      el.textContent = el.dataset[lang];
+      el.innerHTML = el.dataset[lang]; // ⬅️ INI KUNCINYA
     });
 
     langToggle.textContent = lang === "en" ? "🇮🇩 ID" : "🇺🇸 EN";
@@ -793,8 +793,10 @@ document.getElementById("year").textContent=new Date().getFullYear();
 
 
 
+
 </body>
 </html>
+
 
 
 
