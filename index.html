@@ -41,6 +41,52 @@
   --text:#5f5955;
   --soft:#ebe4df;
 }
+  .skills-track{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    width:max-content;
+    animation: scrollSkill 25s linear infinite;
+}
+
+.skills-slider:hover .skills-track{
+    animation-play-state: paused;
+}
+
+.skill-item{
+    min-width:90px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:.35s ease;
+}
+
+.skill-item:hover{
+    transform:translateY(-8px) scale(1.1);
+}
+
+.skill-item img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.skill-item span{
+    margin-top:8px;
+    font-size:13px;
+    font-weight:500;
+    color:var(--text-color);
+}
+
+@keyframes scrollSkill{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
 
 /* RESET */
 *{margin:0;padding:0;box-sizing:border-box}
@@ -619,55 +665,98 @@ A fresh Information Systems graduate with experience in data management, documen
       </span>
     </p>
 </div>
+<!-- SKILL -->
+<div class="card">
+    <div class="section-title">Skills & Tools</div>
 
-<!-- SKILLS -->
-<div class="card education">
-    <div class="section-title"
-      data-en="SKILLS "
-      data-id="KEAHLIAN">
-    SKILLS 
-    </div>
+    <div class="skills-slider">
+        <div class="skills-track">
 
-  <div class="skill-box">
-    <div class="skill-header">
-      <h4>IT Support</h4>
-      <span class="value">85%</span>
-    </div>
-    <div class="bar"><i data-width="85%"></i></div>
-  </div>
-
-  <div class="skill-box">
-    <div class="skill-header">
-      <h4>Database & SQL</h4>
-      <span class="value">70%</span>
-    </div>
-    <div class="bar"><i data-width="70%"></i></div>
-  </div>
-
-  <div class="skill-box">
-    <div class="skill-header">
-      <h4>Reporting & Admin</h4>
-      <span class="value">80%</span>
-    </div>
-    <div class="bar"><i data-width="80%"></i></div>
-  </div>
-   <div class="skill-box">
-    <div class="skill-header">
-      <h4>Microsoft Office</h4>
-      <span class="value">90%</span>
-    </div>
-    <div class="bar"><i data-width="80%"></i></div>
-  </div>
-
-  <div class="skill-box">
-    <div class="skill-header">
-      <h4>Web Basics</h4>
-      <span class="value">80%</span>
-    </div>
-    <div class="bar"><i data-width="60%"></i></div>
-  </div>
+            <!-- Set 1 -->
+   <div class="skill-item">
+    <img src="msoffice.png" alt="Microsoft Office">
+    <span>MS Office</span>
 </div>
 
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <span>HTML</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <span>CSS</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                <span>VS Code</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google Workspace">
+                <span>Google Workspace</span>
+            </div>
+
+               <div class="skill-item">
+    <img src="canva.png" alt="Canva">
+    <span>Canva</span>
+</div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                <span>PHP</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+                <span>Laravel</span>
+            </div>
+
+            <!-- Duplicate untuk loop -->
+   <div class="skill-item">
+    <img src="msoffice.png" alt="Microsoft Office">
+    <span>MS Office</span>
+</div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                <span>MySQL</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <span>HTML</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <span>CSS</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                <span>VS Code</span>
+            </div>
+
+        </div>
+    </div>
+</div>
 <!-- CERTIFICATES -->
 <div class="card education">
     <div class="section-title"
