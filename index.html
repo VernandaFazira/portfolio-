@@ -1,1080 +1,1094 @@
-<!doctype html>
-<html lang="en">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Vernanda Fazira",
-  "url": "https://vernandafazira.github.io/portfolio-/",
-  "jobTitle": "IT Support",
-  "sameAs": [
-    "https://www.linkedin.com/in/vernanda-fazira-943041288/"
-  ]
-}
-</script>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-<meta name="google-site-verification" content="zWZkUfL47oJVco24AOStYRZvgMigc03tDkbwRsom7qw" />
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Vernanda Fazira | Portfolio</title>
-<link rel="icon"
-      href="data:image/svg+xml,
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-        <rect width='100' height='100' rx='20' fill='%236b4f3f'/>
-        <text x='50' y='65'
-              font-size='50'
-              text-anchor='middle'
-              fill='white'
-              font-family='Arial, sans-serif'
-              font-weight='700'>VF</text>
-      </svg>">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Vernanda Fazira">
-<meta name="description" content="Portfolio resmi Vernanda Fazira. Lulusan D3 Sistem Informasi, IT Support, Web Support, dan Administrasi Sistem.">
-
-<style>
-:root{
-  --bg:#f5f1ed;
-  --card:#ffffff;
-  --primary:#6b4f3f;
-  --accent:#b79c8b;
-  --text:#5f5955;
-  --soft:#ebe4df;
-}
-      .skills-slider{
-    width:100%;
-    overflow:hidden;
-    margin-top:20px;
-    position:relative;
-}
-
-.skills-track{
-    display:flex;
-    align-items:center;
-    gap:35px;
-    width:max-content;
-    animation: scrollSkill 25s linear infinite;
-}
-
-.skills-slider:hover .skills-track{
-    animation-play-state: paused;
-}
-
-.skill-item{
-    min-width:90px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    transition:.35s ease;
-}
-
-.skill-item:hover{
-    transform:translateY(-8px) scale(1.1);
-}
-
-.skill-item img{
-    width:55px;
-    height:55px;
-    object-fit:contain;
-}
-
-.skill-item span{
-    margin-top:8px;
-    font-size:13px;
-    font-weight:500;
-    color:var(--text-color);
-}
-
-@keyframes scrollSkill{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-50%);
-    }
-}
-
-/* RESET */
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:Inter,system-ui,Segoe UI,Roboto;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
-}
-
-.wrap{max-width:1080px;margin:auto;padding:20px}
-
-/* GLOBAL CARD */
-.card{
-  background:var(--card);
-  padding:25px;
-  border-radius:18px;
-  box-shadow:0 10px 28px rgba(0,0,0,0.06);
-  border:1px solid var(--soft);
-  margin-top:20px;
-}
-
-/* HEADER / HERO */
-.hero{
-  display:flex;
-  gap:25px;
-  background:var(--card);
-  padding:30px;
-  border-radius:20px;
-  margin-top:20px;
-  box-shadow:0 10px 28px rgba(0,0,0,0.06);
-  border:1px solid var(--soft);
-}
-.hero-img{
-  width:240px;
-  height:240px;
-  border-radius:18px;
-  overflow:hidden;
-  flex-shrink:0;
-}
-.hero-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.hero-text h1{
-  color:var(--primary);
-  font-size:28px;
-  font-weight:800;
-}
-.hero-text .role{
-  margin-top:6px;
-  font-size:15px;
-  color:#7a726d;
-}
-
-/* BUTTONS */
-.btn{
-  padding:9px 14px;
-  border-radius:10px;
-  font-weight:700;
-  display:inline-block;
-  text-align:center;
-}
-.btn.primary{
-  background:var(--primary);
-  color:white;
-}
-.btn.outline{
-  border:2px solid var(--primary);
-  color:var(--primary);
-}
-a.btn,
-a.btn:visited,
-a.btn:focus,
-a.btn:active {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-a.btn.outline:hover {
-  color: #fff;
-  background: var(--primary);
-  border-color: var(--primary);
-}
-/* SECTIONS */
-.section-title{
-  font-size:22px;
-  color:var(--primary);
-  font-weight:800;
-  margin-bottom:8px;
-}
-
-/* SKILLS */
-.skill-box h4{
-  color:var(--primary);
-  font-size:16px;
-  margin-bottom:6px;
-}
-.bar{
-  height:10px;
-  background:#eee;
-  border-radius:999px;
-  overflow:hidden;
-}
-.bar i{
-  display:block;
-  height:100%;
-  width:0;
-  background:linear-gradient(90deg,var(--primary),var(--accent));
-  border-radius:999px;
-  transition:all 1s ease;
-}
-
-/* PROJECT GRID */
-.projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:16px;
-}
-.project{
-  padding:18px;
-  border-radius:16px;
-  background:var(--card);
-  border:1px solid var(--soft);
-  box-shadow:0 6px 18px rgba(0,0,0,0.04);
-}
-.project h3{
-  margin-bottom:6px;
-  color:var(--primary);
-}
-
-/* CONTACT FORM */
-input,textarea{
-  width:100%;
-  padding:10px;
-  border-radius:10px;
-  border:1px solid #ddd;
-  font-size:14px;
-}
-.skill-box {
-  margin-bottom: 18px;
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 6px;
-}
-
-.skill-header h4 {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.skill-header .value {
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-.bar {
-  width: 100%;
-  height: 8px;
-  background: #ddd;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.bar i {
-  display: block;
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  border-radius: 20px;
-  transition: width 1.3s ease;
-}
-
-
-/* FOOTER */
-footer{
-  text-align:center;
-  margin:25px 0 10px;
-  font-size:13px;
-  color:#7a726d;
-}
-.social-btn {
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s ease;
-}
-
-.social-btn {
-  text-decoration: none !important;
-}
-
-.projects .project {
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.projects .project:hover {
-  transform: translateY(-4px);
-  border-color: var(--primary);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-  background: #fff;
-}
-
-.projects .project a {
-  font-weight: 600;
-  color: var(--primary);
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.projects .project a:hover {
-  opacity: 0.7;
-  letter-spacing: 0.5px;
-}
-.hero-img {
-  width: 140px;      
-  height: 140px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: auto;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-}
-
-.hero-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.3s ease;
-}
-
-.hero-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
-}
-
-.hero-img:hover img {
-  transform: scale(1.08);
-}
-  /* CERTIFICATES */
-.certificates {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-
-.certificate {
-  background: var(--card);
-  border: 1px solid var(--soft);
-  border-radius: 14px;
-  padding: 14px;
-  text-align: center;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-
-.certificate:hover {
-  transform: translateY(-4px);
-  border-color: var(--primary);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
-}
-
-.certificate img {
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.certificate h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary);
-}
-
-.certificate span {
-  font-size: 12px;
-  opacity: 0.7;
-}
-  /* ===== EDUCATION ===== */
-.education .edu-wrap{
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.education .edu-logo{
-  width: 70px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  background: #fff;
-  padding: 6px;
-  border: 1px solid #e5e5e5;
-  transition: 0.3s ease;
-}
-
-.education .edu-logo:hover{
-  transform: scale(1.05);
-}
-
-.education .edu-text strong{
-  color: var(--primary);
-  font-size: 15px;
-}
-
-.education .edu-text span{
-  font-size: 13px;
-  color: #7a726d;
-}
-
-.education .edu-desc{
-  margin-top: 12px;
-  font-size: 14px;
-  line-height: 1.6;
-}
-  .cert-img {
-  cursor: zoom-in;
-  transition: 0.3s;
-}
-
-.cert-img:active {
-  transform: scale(1.5);
-  z-index: 10;
-}
-  .edu-wrap {
-  display: flex;
-  align-items: flex-start; /* penting: sejajarkan ke atas */
-  gap: 15px;
-}
-  .edu-logo {
-  margin-top: 2px; /* opsional, biar pas sejajar teks */
-}
-
-
-
-  /* ===== DARK MODE ===== */
-body.dark {
-  --bg: #181513;
-  --card: #1f1b18;
-  --primary: #d2b48c;
-  --accent: #b79c8b;
-  --text: #e6e1dd;
-  --soft: #2b2622;
-}
-  #lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.75);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  cursor: zoom-out;
-}
-
-#lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 12px;
-}
-.certificate img {
-  cursor: zoom-in;
-}
-
-
-/* smooth transition */
-body,
-.card,
-.hero,
-.project,
-.btn {
-  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
-}
-
-/* button toggle style */
-#themeToggle {
-  font-size: 14px;
-  cursor: pointer;
-}
-button.btn {
-  background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  font-weight: 700;
-  padding: 9px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button.btn:hover {
-  background: var(--primary);
-  color: #fff;
-}
-
-
-
-/* RESPONSIVE */
-@media(max-width:820px){
-  .hero{
-    flex-direction:column;
-    text-align:center;
-    align-items:center;
-  }
-  .hero-img{
-    width:180px;
-    height:180px;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernanda Fazira | Portfolio</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0A192F', // Deep Navy Blue
+                            light: '#112240',
+                            lighter: '#233554'
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37', // Elegant Gold
+                            hover: '#B5952F'
+                        },
+                        light: {
+                            bg: '#F8FAFC', // Very light slate for background
+                            card: '#FFFFFF',
+                            text: '#334155'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for the certificate carousel but keep functionality */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        /* Custom timeline dot */
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #0A192F;
+            border: 3px solid #D4AF37;
+            z-index: 10;
+        }
+    </style>
 </head>
-<div id="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img">
+<body class="bg-light-bg text-light-text font-sans antialiased selection:bg-gold selection:text-navy">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-navy tracking-tight">
+                        Vernanda<span class="text-gold">.</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-sm font-medium text-gray-600 hover:text-gold transition-colors">Home</a>
+                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-gold transition-colors">About</a>
+                    <a href="#experience" class="text-sm font-medium text-gray-600 hover:text-gold transition-colors">Experience</a>
+                    <a href="#skills" class="text-sm font-medium text-gray-600 hover:text-gold transition-colors">Skills</a>
+                    <a href="#projects" class="text-sm font-medium text-gray-600 hover:text-gold transition-colors">Projects</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-600 hover:text-gold transition-colors">Contact</a>
+                    
+                    <div class="flex items-center space-x-4 border-l border-gray-300 pl-6">
+                        <a href="https://www.linkedin.com/in/vernanda-fazira-943041288" target="_blank" class="text-gray-400 hover:text-navy transition-colors text-lg">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/vernandafazira" target="_blank" class="text-gray-400 hover:text-navy transition-colors text-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" onclick="downloadCV(event)" class="px-5 py-2 text-sm font-medium rounded-full bg-navy text-white hover:bg-navy-light border border-navy transition-all shadow-md hover:shadow-lg">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-navy focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 shadow-lg absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50">Home</a>
+                <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50">About</a>
+                <a href="#experience" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50">Experience</a>
+                <a href="#skills" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50">Skills</a>
+                <a href="#projects" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50">Projects</a>
+                <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50">Contact</a>
+                <div class="mt-4 pt-4 border-t border-gray-200 flex flex-col gap-3 px-3">
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/vernanda-fazira-943041288" target="_blank" class="text-gray-500 hover:text-navy text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/vernandafazira" target="_blank" class="text-gray-500 hover:text-navy text-xl"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="#" onclick="downloadCV(event)" class="w-full text-center px-4 py-2 mt-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-navy hover:bg-navy-light">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-[90vh]">
+        <div class="md:w-3/5 space-y-6 relative z-10">
+            <div class="inline-block px-3 py-1 bg-gold/10 text-gold rounded-full text-sm font-semibold mb-2 border border-gold/20">
+                Welcome to my portfolio
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-navy leading-tight">
+                Hi, I'm <br/><span class="text-gold">Vernanda Fazira</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-medium text-gray-600">
+                IT Support · Database Administration · System Support
+            </h2>
+            <p class="text-base md:text-lg text-gray-500 max-w-2xl leading-relaxed">
+                A fresh Information Systems graduate with experience in data management, documentation, website administration, customer support, and operational activities. Skilled in using digital tools, managing information accurately, and supporting both administrative and technical processes.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#projects" class="px-8 py-3 rounded-full bg-navy text-white font-medium hover:bg-navy-light transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    View Projects
+                </a>
+                <a href="#contact" class="px-8 py-3 rounded-full bg-white text-navy font-medium border-2 border-navy hover:bg-gray-50 transition-all shadow-sm transform hover:-translate-y-1">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+        
+        <!-- Profile Picture Visual -->
+        <div class="md:w-2/5 mt-16 md:mt-0 flex justify-center relative">
+            <!-- Decorative circle -->
+            <div class="absolute inset-0 bg-gold rounded-full blur-3xl opacity-20 transform scale-110"></div>
+            <!-- Main image container -->
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white shadow-2xl overflow-hidden bg-navy flex items-center justify-center">
+                <img src="img/bg pf.png" alt="Vernanda Fazira" class="object-cover w-full h-full">
+            </div>
+            <!-- Decorative floating dots -->
+            <div class="absolute top-10 -left-10 w-6 h-6 bg-gold rounded-full animate-bounce"></div>
+            <div class="absolute bottom-10 -right-5 w-4 h-4 bg-navy rounded-full animate-pulse"></div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- About Text -->
+                <div>
+                    <h2 class="text-3xl font-bold text-navy mb-2 relative inline-block">
+                        About Me
+                        <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gold rounded"></span>
+                    </h2>
+                    <div class="mt-8 space-y-4 text-gray-600 leading-relaxed">
+                        <p>
+                            I am a detail-oriented and adaptable Information Systems graduate eager to contribute in dynamic work environments. I am skilled in using digital tools, managing information accurately, and supporting both administrative and technical processes, including customer support and operational activities.
+                        </p>
+                        <p>
+                            Known as a disciplined and fast-learning individual with strong analytical and communication skills. I am capable of working independently or as part of a team. I am proficient in operating various office applications and possess a solid foundation in database management as well as web application development.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div>
+                    <div class="bg-light-bg rounded-2xl p-8 shadow-lg border-t-4 border-gold relative overflow-hidden">
+                        <!-- Background icon -->
+                        <i class="fas fa-graduation-cap absolute -right-10 -bottom-10 text-9xl text-gray-200 opacity-50 transform -rotate-12"></i>
+                        
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold text-navy mb-6 flex items-center gap-2">
+                                <i class="fas fa-user-graduate text-gold"></i> Education
+                            </h3>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-xl font-semibold text-gray-800">Associate Degree (D3) in Information Systems</h4>
+                                <p class="text-gold font-medium mt-1">Universitas Bina Sarana Informatika (UBSI)</p>
+                                <p class="text-sm text-gray-500 mt-1"><i class="far fa-calendar-alt mr-2"></i> Aug 2022 - Aug 2025</p>
+                            </div>
+                            
+                            <div class="flex items-center gap-3 mb-6 bg-white p-3 rounded-lg border border-gray-100 inline-flex shadow-sm">
+                               <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md overflow-hidden">
+                                <img src="img/ubsi.png" alt="Logo UBSI" class="w-8 h-8 object-contain">
+                            </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-navy">3.90 <span class="text-sm font-normal text-gray-500">/ 4.00</span></p>
+                                </div>
+                            </div>
+                            
+                            <div class="border-t border-gray-200 pt-4">
+                                <p class="text-sm font-semibold text-gray-700 mb-1">Final Project (Thesis):</p>
+                                <p class="text-sm text-gray-600 italic">"Design and Development of the Adaptable Consulting Application Using the Rapid Application Development (RAD) Method"</p>
+                                <a href="#projects" class="inline-flex items-center gap-2 mt-3 text-sm font-semibold text-navy hover:text-gold transition-colors">
+                                    View Final Project <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-light-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-2 inline-block relative">
+                    Work & Project Experience
+                    <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gold rounded"></span>
+                </h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="border-l-2 border-gold/30 pl-8 space-y-12 ml-4">
+                    
+                    <!-- Experience Item 1 -->
+                    <div class="relative timeline-dot group">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 group-hover:shadow-lg transition-shadow">
+                            <span class="inline-block px-3 py-1 bg-navy/5 text-navy text-xs font-semibold rounded-full mb-3">
+                                Feb 2025 - Sep 2025
+                            </span>
+                            <h3 class="text-xl font-bold text-gray-800">Administration - Full Time</h3>
+                            <h4 class="text-gold font-medium mb-3">PT Delta Laras Wisata, Tegal</h4>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li>Recorded and archived prospective pilgrim data neatly and accurately.</li>
+                                <li>Managed social media accounts (Instagram, Facebook) for information dissemination.</li>
+                                <li>Provided detailed explanations regarding packages, departure schedules, and administrative requirements.</li>
+                                <li>Handled inquiries and served prospective pilgrims both in-person and online.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="relative timeline-dot group">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 group-hover:shadow-lg transition-shadow">
+                            <span class="inline-block px-3 py-1 bg-navy/5 text-navy text-xs font-semibold rounded-full mb-3">
+                                Agust 2025 - Des 2025
+                            </span>
+                            <h3 class="text-xl font-bold text-gray-800">IT Support - Internship</h3>
+                            <h4 class="text-gold font-medium mb-3">PT Nibras Berkah Mulia, Tegal</h4>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li>Fixed website content, updated product data, performed basic QA, and checked deployment.</li>
+                                <li>Provided technical support for the company's website and internal systems.</li>
+                                <li>Documented the website development and maintenance processes comprehensively.</li>
+                                <li>Conducted testing on website functionality prior to launch to ensure smooth operation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="relative timeline-dot group">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 group-hover:shadow-lg transition-shadow">
+                            <span class="inline-block px-3 py-1 bg-navy/5 text-navy text-xs font-semibold rounded-full mb-3">
+                                Feb 2024 - Jun 2024
+                            </span>
+                            <h3 class="text-xl font-bold text-gray-800">Full Stack Web Development - MSIB</h3>
+                            <h4 class="text-gold font-medium mb-3">PT Global Investment Institusi (Learning X)</h4>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li>Monitored dashboards, performed SQL data checking, handled documentation, and assisted in development tasks.</li>
+                                <li>Developed dynamic web-based applications using the Flask framework (Python).</li>
+                                <li>Focused on user interface (UI/UX) implementation and core system functionality.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 4 -->
+                    <div class="relative timeline-dot group">
+                        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 group-hover:shadow-lg transition-shadow">
+                            <span class="inline-block px-3 py-1 bg-navy/5 text-navy text-xs font-semibold rounded-full mb-3">
+                                Jun 2022 - Jun 2023
+                            </span>
+                            <h3 class="text-xl font-bold text-gray-800">Marketing - Full Time</h3>
+                            <h4 class="text-gold font-medium mb-3">PT Columbus Tegal</h4>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li>Conducted targeted promotions and offered products to potential customers.</li>
+                                <li>Managed customer data efficiently and compiled organized sales reports.</li>
+                                <li>Provided clear information regarding product specifications, pricing, and financing services.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <!-- Skills Section -->
+<section id="skills" class="py-20 bg-[#0B1120]">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-white mb-3">
+                Skills & Tools
+            </h2>
+
+            <div class="w-20 h-1 bg-yellow-400 mx-auto rounded-full mb-5"></div>
+
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                A combination of administrative expertise, IT support, digital tools,
+                and web development technologies that I use to deliver efficient and
+                reliable solutions.
+            </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
+            <!-- Microsoft Excel -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-file-excel text-4xl text-green-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">Microsoft Excel</h3>
+            </div>
+
+            <!-- Word -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-file-word text-4xl text-blue-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">Microsoft Word</h3>
+            </div>
+
+            <!-- PowerPoint -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-file-powerpoint text-4xl text-orange-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">PowerPoint</h3>
+            </div>
+            <!-- Data Entry -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-keyboard text-4xl text-green-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Data Entry</h3>
 </div>
 
-<body>
-<div class="wrap">
- <div style="display:flex;justify-content:flex-end;gap:10px;margin-bottom:10px">
-  <button id="langToggle" class="btn outline" type="button">
-    🇮🇩 ID
-  </button>
-
-  <button id="themeToggle" class="btn outline" type="button">
-    🌙 Dark Mode
-  </button>
+<!-- Office Administration -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-folder-open text-4xl text-yellow-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Administration</h3>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-img">
-    <img src="profile2.png" alt="Vernanda Fazira">
-  </div>
-
-  <div class="hero-text">
-    <h1>Vernanda Fazira</h1>
-   <div class="role" data-en="IT Support · Database Administration · System Support"
-     data-id="IT Support · Administrasi Basis Data · Dukungan Sistem">
-  IT Support · Database Administration · System Support
-</div>
-    
-<p style="margin-top:12px;font-size:15px"
- data-en="A fresh Information Systems graduate with experience in data management, documentation, website administration, customer support, and operational activities. Skilled in using digital tools, managing information accurately, and supporting both administrative and technical processes. Detail-oriented, adaptable, and eager to contribute in dynamic work environments."
- data-id="Lulusan D3 Sistem Informasi dengan pengalaman dalam pengelolaan data, dokumentasi, administrasi website, layanan pelanggan, dan kegiatan operasional. Terampil menggunakan berbagai tools digital, mengelola informasi secara akurat, serta mendukung proses administrasi maupun teknis. Teliti, adaptif, dan siap berkontribusi dalam lingkungan kerja yang dinamis.">
-A fresh Information Systems graduate with experience in data management, documentation, website administration, customer support, and operational activities.
-</p>
-
-   <div style="margin-top:15px;display:flex;gap:10px;flex-wrap:wrap">
-  <a href="https://www.linkedin.com/in/vernanda-fazira-943041288/" class="btn outline social-btn" target="_blank">LinkedIn</a>
-  <a href="https://github.com/VernandaFazira" class="btn outline social-btn" target="_blank">GitHub</a>
-<button type="button"
-        class="btn outline social-btn"
-        onclick="alert('Sedang diperbaiki, sabar ya 😊')">
-  Download CV
-</button>
-
+<!-- Report -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-file-alt text-4xl text-cyan-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Reporting</h3>
 </div>
 
-  </div>
+<!-- Data Validation -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-check-circle text-4xl text-green-500"></i>
+    </div>
+    <h3 class="text-white font-semibold">Data Validation</h3>
+</div>
+
+            <!-- Google Sheets -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-table text-4xl text-green-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">Google Sheets</h3>
+            </div>
+
+            <!-- Google Docs -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-file-alt text-4xl text-blue-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">Google Docs</h3>
+            </div>
+
+            <!-- HTML -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-html5 text-4xl text-orange-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">HTML</h3>
+            </div>
+
+            <!-- CSS -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">CSS</h3>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-js text-4xl text-yellow-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">JavaScript</h3>
+            </div>
+
+            <!-- PHP -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-php text-4xl text-indigo-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">PHP</h3>
+            </div>
+
+            <!-- Laravel -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-laravel text-4xl text-red-500"></i>
+                </div>
+                <h3 class="text-white font-semibold">Laravel</h3>
+            </div>
+
+            <!-- IT Support -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-headset text-4xl text-blue-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">IT Support</h3>
+</div>
+
+<!-- Troubleshooting -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-tools text-4xl text-orange-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Troubleshooting</h3>
+</div>
+
+<!-- Software Installation -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-download text-4xl text-green-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Software Installation</h3>
+</div>
+
+<!-- Website Management -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-globe text-4xl text-cyan-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Website Management</h3>
+</div>
+
+            <!-- Python -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-python text-4xl text-yellow-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">Python</h3>
+            </div>
+
+            <!-- MySQL -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-database text-4xl text-cyan-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">MySQL</h3>
+            </div>
+
+            <!-- GitHub -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fab fa-github text-4xl text-white"></i>
+                </div>
+                <h3 class="text-white font-semibold">GitHub</h3>
+            </div>
+
+            <!-- VS Code -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-code text-4xl text-blue-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">VS Code</h3>
+            </div>
+
+            <!-- Zoom -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-video text-4xl text-blue-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Zoom</h3>
+</div>
+
+<!-- Google Meet -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-users text-4xl text-green-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Google Meet</h3>
+</div>
+
+<!-- Email -->
+<div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+    <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <i class="fas fa-at text-4xl text-red-400"></i>
+    </div>
+    <h3 class="text-white font-semibold">Email Management</h3>
+</div>
+
+            <!-- Canva -->
+            <div class="bg-[#111827] rounded-2xl border border-slate-700 p-8 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300">
+                <div class="w-16 h-16 bg-[#1E293B] rounded-2xl flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-palette text-4xl text-pink-400"></i>
+                </div>
+                <h3 class="text-white font-semibold">Canva</h3>
+            </div>
+
+        </div>
+
+    </div>
 </section>
-  <!-- EDUCATION -->
-<div class="card education">
-    <div class="section-title"
-      data-en="EDUCATION"
-      data-id="PENDIDIKAN">
-      EDUCATION
-    </div>
- <div class="edu-wrap" style="display:flex;align-items:flex-start;gap:15px;">
-    <img 
-  src="ubsi.png" 
-  alt="Universitas Bina Sarana Informatika"
-  class="edu-logo"
-  style="margin-top:2px;"
->
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-light-bg overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-navy mb-2 inline-block relative">
+                        Certificates
+                        <span class="absolute -bottom-2 left-0 w-12 h-1 bg-gold rounded"></span>
+                    </h2>
+                </div>
+                <!-- Carousel Controls -->
+                <div class="flex gap-2">
+                    <button onclick="scrollCerts('left')" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-navy hover:bg-gold hover:text-white hover:border-gold transition-colors shadow-sm">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="scrollCerts('right')" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-navy hover:bg-gold hover:text-white hover:border-gold transition-colors shadow-sm">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="relative">
+                <!-- Fade Gradients -->
+                <div class="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-light-bg to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-light-bg to-transparent z-10 pointer-events-none"></div>
+                
+                <div id="cert-container" class="flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory py-4 scroll-smooth">
+                    
+                    <!-- Cert Item 1 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <!-- NOTE: Replace the src below with your actual certificate image URL (e.g., 'images/cert1.jpg') -->
+                           <img src="img/certifikat/S1.jpg"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Warehouse Administration Training</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">Ministry of Manpower RI</p>
+                                <p class="text-xs text-gray-400 mt-1">2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Item 2 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/S3.jpg"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Certificate of Completion Microsoft Skill for Jobs</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">Kemenko & Microsoft</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Item 3 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/S2.jpg"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Data Processing with Microsoft Excel</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">Kemenko & Microsoft</p>
+                                <p class="text-xs text-gray-400 mt-1">2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Item 4 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/S6.jpg"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Software Development Competency Certificate</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">BNSP - LSP UBSI</p>
+                                <p class="text-xs text-gray-400 mt-1">2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Item 7 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/S4.jpg"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Full Stack Web Development Intermediate</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">Learning X / MSIB Kampus Merdeka</p>
+                                <p class="text-xs text-gray-400 mt-1">2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert Item 5 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/S7.png"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Basic Excel Training</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">BISA.AI</p>
+                                <p class="text-xs text-gray-400 mt-1">2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cert Item 6 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/S9.png"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Starting Programming With Python</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">Dicoding Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cert Item 7 -->
+                    <div class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+                        <div class="h-40 bg-gray-200 relative overflow-hidden border-b border-gray-100">
+                            <img src="img/certifikat/TOEFL.jpg"
+                              alt="Warehouse Administratiowarehouse-adminn Training"
+                              class="w-full h-full object-cover group-hover:scale-110 duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="font-bold text-gray-800 leading-snug">Certificate TOEFL</h3>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-gray-100">
+                                <p class="text-sm font-medium text-navy">LEMBAGA BAHASA UBSI</p>
+                                <p class="text-xs text-gray-400 mt-1">2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy mb-2 inline-block relative">
+                    Featured Projects
+                    <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gold rounded"></span>
+                </h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Selected web development and support projects.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+
+                <!-- Project 2 -->
+                <div class="bg-light-bg rounded-xl overflow-hidden border border-gray-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-52 overflow-hidden">
+    <img src="img/adaptable.png"
+         alt="Miemie Brownie"
+         class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
 
-    <div class="edu-text">
-       <p>
-    <strong
-      data-en="Associate Degree in Information Systems"
-      data-id="Diploma (D3) Sistem Informasi">
-      Associate Degree in Information Systems
-    </strong><br>
-
-    <span
-      data-en="Bina Sarana Informatics University (UBSI)<br>GPA 3.90 / 4.00"
-      data-id="Universitas Bina Sarana Informatika (UBSI)<br>IPK 3.90 / 4.00">
-      Bina Sarana Informatics University (UBSI)<br>
-      GPA 3.90 / 4.00
-    </span>
-         <br>
-<small style="display:block;margin-top:8px">
-
-  <strong
-    data-en="Final Project (Thesis):"
-    data-id="Tugas Akhir:">
-    Tugas Akhir:
-  </strong>
-
-  <span
-    data-en="Design and Development of the Adaptable Consulting Application Using the Rapid Application Development (RAD) Method"
-    data-id="RANCANG BANGUN APLIKASI ADAPTABLE CONSULTING DENGAN METODE RAPID APPLICATION DEVELOPMENT (RAD)">
-    Rancang Bangun Aplikasi Adaptable Consulting Dengan Metode Rapid Application Development (RAD)
-  </span>
-
-  <br>
-
-  <a href="https://repository.bsi.ac.id/repo/67710/RANCANG-BANGUN-APLIKASI-ADAPTABLE-CONSULTING-DENGAN-METODE-RAPID-APPLICATION-DEVELOPMENT-(RAD)"
-     target="_blank"
-     class="btn outline social-btn"
-     style="margin-top:6px;display:inline-block;font-size:12px"
-     data-en="View Final Project →"
-     data-id="Lihat Tugas Akhir →">
-     Lihat Tugas Akhir →
-  </a>
-
-</small>
-
-  </p>
-    </div>
-  </div>
 </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3 flex-wrap">
+                            <span class="text-xs font-semibold px-2 py-1 bg-red-100 text-red-700 rounded">Laravel</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-gray-200 text-gray-700 rounded">RAD Method</span>
+                             <span class="text-xs font-semibold px-2 py-1 bg-green-100 text-green-700 rounded">MySQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-2">Adaptable Consulting</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Event information & registration platform developed as a final thesis project including process documentation.</p>
+                        <a href="#" class="inline-flex items-center gap-1 text-gold font-semibold hover:text-navy transition-colors text-sm">
+                            Visit Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
 
-<!-- EXPERIENCE -->
-<div class="card education">
-    <div class="section-title"
-      data-en="EXPERIENCE"
-      data-id="PENGALAMAN">
-     EXPERIENCE
-    </div>
-       <p>
-      <strong>PT Nibras Berkah Mulia — Web / Support Intern</strong><br>
-      <span
-        data-en="Fixing website content, updating product data, basic QA, and deployment checks."
-        data-id="Melakukan perbaikan konten website, pembaruan data produk, QA dasar, serta pengecekan sebelum proses deployment.">
-        Fixing website content, updating product data, basic QA, and deployment checks.
-      </span>
-    </p>
+                <!-- Project 3 -->
+                <div class="bg-light-bg rounded-xl overflow-hidden border border-gray-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-52 overflow-hidden">
+    <img src="img/miemiebrownie.png"
+         alt="Miemie Brownie"
+         class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
 
-  <br>
-<p>
-      <strong>PT Global Investment (Learning X) — Independent Study</strong><br>
-      <span class="date">08/2024 – 02/2025</span><br>
-      <span
-        data-en="Monitoring dashboard, SQL data checking, documentation, and assisting the development team."
-        data-id="Melakukan monitoring dashboard, pengecekan data menggunakan SQL, dokumentasi, serta membantu tim pengembang.">
-        Monitoring dashboard, SQL data checking, documentation, and assisting the development team.
-      </span>
-    </p>
-  <br>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-  <p>
-      <strong>Thesis Project — Adaptable Consulting</strong><br>
-      <span
-        data-en="Process documentation, testing flow, payment testing, and writing user guides."
-        data-id="Melakukan dokumentasi proses, pengujian alur sistem, pengujian pembayaran, serta penyusunan panduan pengguna.">
-        Process documentation, testing flow, payment testing, and writing user guides.
-      </span>
-    </p>
-<br>
-  <p>
-      <strong>Thesis Project — Website SDN 1 Lumingser</strong><br>
-      <span
-        data-en="School information website to manage announcements, profiles, and teacher data using HTML, CSS, and PHP."
-        data-id=" Website informasi sekolah untuk mengelola pengumuman, profil, dan data guru menggunakan HTML, CSS, dan PHP."
-      </span>
-    </p>
+
 </div>
-<!-- SKILLS -->
-<div class="card">
-    <div class="section-title">Skills & Tools</div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3 flex-wrap">
+                            <span class="text-xs font-semibold px-2 py-1 bg-red-100 text-red-700 rounded">Laravel 10</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-blue-100 text-blue-700 rounded">Bootstrap 5</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-yellow-100 text-yellow-700 rounded">Midtrans API</span>
+                             <span class="text-xs font-semibold px-2 py-1 bg-green-100 text-green-700 rounded">MySQL</span>
+                             <span class="text-xs font-semibold px-2 py-1 bg-yellow-100 text-yellow-700 rounded">Bootstrap</span>
 
-    <div class="skills-slider">
-        <div class="skills-track">
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-2">E-Commerce Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Frontend support & operational tasks to ensure smooth user experience and website functionality.</p>
+                        <a href="#" class="inline-flex items-center gap-1 text-gold font-semibold hover:text-navy transition-colors text-sm">
+                            Visit Project <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-light-bg rounded-xl overflow-hidden border border-gray-200 group hover:shadow-xl transition-all duration-300">
+    <div class="relative h-52 overflow-hidden">
+    <img src="img/fjkt.png"
+         alt="Miemie Brownie"
+         class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
 
-            <!-- Set 1 -->
-   <div class="skill-item">
-    <img src="msoffice.png" alt="Microsoft Office">
-    <span>MS Office</span>
-</div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                <span>MySQL</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                <span>HTML</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                <span>CSS</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                <span>GitHub</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-                <span>VS Code</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google Workspace">
-                <span>Google Workspace</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-                <span>PHP</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
-                <span>Laravel</span>
-            </div>
-
-            <!-- Duplicate untuk loop -->
-   <div class="skill-item">
-    <img src="msoffice.png" alt="Microsoft Office">
-    <span>MS Office</span>
-</div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                <span>MySQL</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                <span>HTML</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                <span>CSS</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                <span>GitHub</span>
-            </div>
-
-            <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-                <span>VS Code</span>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- CERTIFICATES -->
-<div class="card education">
-    <div class="section-title"
-         data-en="CERTIFICATES"
-         data-id="SERTIFIKAT">
-        CERTIFICATES
-    </div>
-
-    <div class="certificates">
-
-        <div class="certificate">
-            <img src="sertifikat-administrasi.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Sertifikat Kelulusan Pelatihan Administrasi Pergudangan</h4>
-            <span>KEMENTERIAN KETENAGAKERJAAN RI</span>
-        </div>
-
-        <div class="certificate">
-            <img src="cert1.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>CERTIFICATE OF COMPLETION MICROSOFT SKILL FOR JOBS</h4>
-            <span>KEMENKO & MICROSOFT</span>
-        </div>
-
-        <div class="certificate">
-            <img src="certificate.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Pengolahan Data dengan Microsoft Excel Skills for Jobs Indonesia</h4>
-            <span>KEMENKO & MICROSOFT</span>
-        </div>
-
-        <div class="certificate">
-            <img src="cert2.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>SERTIFIKAT SOFTWARE DEVELOPMENT</h4>
-            <span>BNSP</span>
-        </div>
-
-        <div class="certificate">
-            <img src="Sertifikat Basic Excel.png" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Sertifikat Basic Excel</h4>
-            <span>BISA.AI</span>
-        </div>
-
-        <div class="certificate">
-            <img src="Sertifikat 2.png" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Memulai Pemrograman Dengan Python</h4>
-            <span>Dicoding Indonesia</span>
-        </div>
-
-        <div class="certificate">
-            <img src="Sertifikat 3.png" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Belajar Dasar Visualisasi Data</h4>
-            <span>Dicoding Indonesia</span>
-        </div>
-
-        <div class="certificate">
-            <img src="Sertifikat.png" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Belajar Dasar Manajemen Proyek</h4>
-            <span>Dicoding Indonesia</span>
-        </div>
-
-        <div class="certificate">
-            <img src="kompe.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Full Stack Web Development Intermediate</h4>
-            <span>Learning X</span>
-        </div>
-
-        <div class="certificate">
-            <img src="penyelesain MSIB.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Sertifikat Penyelesaian MSIB</h4>
-            <span>Learning X</span>
-        </div>
-
-        <div class="certificate">
-            <img src="MSIB.jpg" alt="Certificate"
-                 onclick="openLightbox(this.src)">
-            <h4>Sertifikat Keikutsertaan Studi Independen Bersertifikat</h4>
-            <span>Kemdikbud Ristek</span>
-        </div>
-
-    </div>
-</div>
-<!-- PROJECTS -->
-<div class="card education">
-    <div class="section-title"
-      data-en="PROJECTS "
-      data-id="PROYEK">
-   PROJECTS 
-    </div>
-
-  <div class="projects">
-    <div class="project">
-      <h3>Website SDN 1 Lumingser</h3>
-      <p>Public event website — HTML/CSS/JS.<br>
-      <a href="https://www.sdnlumingser01.sch.id/" target="_blank">Visit →</a></p>
-    </div>
-
-    <div class="project">
-      <h3>Adaptable Consulting</h3>
-      <p>Event info & registration — Laravel.<br>
-      <a href="https://adaptableconsulting.id/" target="_blank">Visit →</a></p>
-    </div>
-
-    <div class="project">
-      <h3>Miemie Brownie</h3>
-      <p>Frontend support & ops.<br>
-      <a href="https://miemiebrownie.com/" target="_blank">Visit →</a></p>
-    </div>
-  </div>
-</div>
-
-<!-- CONTACT -->
-<div class="card education">
-    <div class="section-title"
-      data-en="CONTACT "
-      data-id="KONTAK">
-   CONTACT
-    </div>
-
-  <p><strong>Email:</strong><br>
-  vernandafazira@gmail.com</p>
-
-  <form action="https://formspree.io/f/xjknaqrv" method="POST" style="margin-top:10px;display:flex;flex-direction:column;gap:10px">
-    
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" rows="4" placeholder="Message" required></textarea>
-
-    <button class="btn primary">Send Message</button>
-
-  </form>
-</div>
-
-
-<footer>
-  © <span id="year"></span> Vernanda Fazira — Portfolio
-</footer>
 
 </div>
 
-<script>
-// skill bars
-document.addEventListener("DOMContentLoaded", ()=>{
-  document.querySelectorAll(".bar i").forEach(i=>{
-    const w=i.dataset.width;
-    setTimeout(()=>{ i.style.width=w },200);
-  });
-});
-document.getElementById("year").textContent=new Date().getFullYear();
-</script>
-<script>
-  const form = document.querySelector("form");
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+    <div class="p-6">
+        <div class="flex gap-2 mb-3 flex-wrap">
+            <span class="text-xs font-semibold px-2 py-1 bg-red-100 text-red-700 rounded">Flask</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-blue-100 text-blue-700 rounded">MongoDB</span>
+        </div>
 
-    const data = new FormData(form);
-    const action = form.getAttribute("action");
+        <h3 class="text-xl font-bold text-navy mb-2">
+            F-JKT48 Lombok Community Website
+        </h3>
 
-    const response = await fetch(action, {
-      method: "POST",
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
+        <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+            Community website featuring member profiles, event information, galleries, and announcements with an admin dashboard for content management.
+        </p>
 
-    if (response.ok) {
-      alert("Thank you! Your message was sent successfully");
-      form.reset();
-    } else {
-      alert("Oops! Something went wrong.");
-    }
-  });
-</script>
-<script>
-  const skillBars = document.querySelectorAll(".bar i");
+        <a href="#" class="inline-flex items-center gap-1 text-gold font-semibold hover:text-navy transition-colors text-sm">
+            Visit Project <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+    </div>
+</div>
 
-  function animateSkills() {
-    skillBars.forEach(bar => {
-      const width = bar.getAttribute("data-width");
-      bar.style.width = width;
-    });
-  }
+<div class="bg-light-bg rounded-xl overflow-hidden border border-gray-200 group hover:shadow-xl transition-all duration-300">
+    <div class="relative h-52 overflow-hidden">
+    <img src="img/list.png"
+         alt="Miemie Brownie"
+         class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
 
-  // Trigger saat section terlihat
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) animateSkills();
-    });
-  }, { threshold: 0.1 });
-
-  observer.observe(document.querySelector("#skills") || document.querySelector(".section-title"));
-</script>
-  <script>
-  const toggle = document.getElementById("themeToggle");
-  const body = document.body;
-
-  // load saved theme
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark");
-    toggle.textContent = "☀️ Light Mode";
-  }
-
-  toggle.addEventListener("click", () => {
-    body.classList.toggle("dark");
-
-    if (body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      toggle.textContent = "☀️ Light Mode";
-    } else {
-      localStorage.setItem("theme", "light");
-      toggle.textContent = "🌙 Dark Mode";
-    }
-  });
-</script>
- <script>
-  const langToggle = document.getElementById("langToggle");
-  let currentLang = localStorage.getItem("lang") || "en";
-
-  function applyLang(lang) {
-    document.querySelectorAll("[data-en]").forEach(el => {
-      el.innerHTML = el.dataset[lang]; // ⬅️ INI KUNCINYA
-    });
-
-    langToggle.textContent = lang === "en" ? "🇮🇩 ID" : "🇺🇸 EN";
-    localStorage.setItem("lang", lang);
-  }
-
-  applyLang(currentLang);
-
-  langToggle.addEventListener("click", () => {
-    currentLang = currentLang === "en" ? "id" : "en";
-    applyLang(currentLang);
-  });
-</script>
-<script>
-function openLightbox(src) {
-  document.getElementById("lightbox-img").src = src;
-  document.getElementById("lightbox").style.display = "flex";
-}
-
-function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none";
-}
-</script>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
 
+</div>
 
 
+    <div class="p-6">
+        <div class="flex gap-2 mb-3 flex-wrap">
+            <span class="text-xs font-semibold px-2 py-1 bg-orange-100 text-orange-700 rounded">Flask</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-blue-100 text-blue-700 rounded">CSS</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-yellow-100 text-yellow-700 rounded">JavaScript</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-navy mb-2">
+            Bucket List App
+        </h3>
+
+        <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+            Interactive web application that allows users to create, organize, edit, and track personal goals using dynamic JavaScript functionality.
+        </p>
+
+        <a href="#" class="inline-flex items-center gap-1 text-gold font-semibold hover:text-navy transition-colors text-sm">
+            Visit Project <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+    </div>
+</div>
+
+<div class="bg-light-bg rounded-xl overflow-hidden border border-gray-200 group hover:shadow-xl transition-all duration-300">
+    <div class="relative h-52 overflow-hidden">
+    <img src="img/sweeter.png"
+         alt="Miemie Brownie"
+         class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+   
+</div>
+
+    <div class="p-6">
+        <div class="flex gap-2 mb-3 flex-wrap">
+            <span class="text-xs font-semibold px-2 py-1 bg-green-100 text-green-700 rounded">Python</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-indigo-100 text-indigo-700 rounded">Flask</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-teal-100 text-teal-700 rounded">MongoDB</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-navy mb-2">
+            Mini Social Media Platform
+        </h3>
+
+        <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+            Social media web application with user authentication, posting, profile management, and CRUD functionality developed using Flask and MongoDB.
+        </p>
+
+        <a href="#" class="inline-flex items-center gap-1 text-gold font-semibold hover:text-navy transition-colors text-sm">
+            Visit Project <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+    </div>
+</div>
+
+<div class="bg-light-bg rounded-xl overflow-hidden border border-gray-200 group hover:shadow-xl transition-all duration-300">
+    <div class="relative h-52 overflow-hidden">
+    <img src="img/carwash.png"
+         alt="Miemie Brownie"
+         class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+  
+</div>
+
+
+    <div class="p-6">
+        <div class="flex gap-2 mb-3 flex-wrap">
+            <span class="text-xs font-semibold px-2 py-1 bg-red-100 text-red-700 rounded">Laravel</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-blue-100 text-blue-700 rounded">MySQL</span>
+            <span class="text-xs font-semibold px-2 py-1 bg-purple-100 text-purple-700 rounded">Bootstrap</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-navy mb-2">
+            Car Wash Administration Information System
+        </h3>
+
+        <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+            Administration system for managing customer data, service transactions, payment records, reports, and operational activities of a car wash business.
+        </p>
+
+        <a href="#" class="inline-flex items-center gap-1 text-gold font-semibold hover:text-navy transition-colors text-sm">
+            Visit Project <i class="fas fa-external-link-alt ml-1"></i>
+        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2 inline-block relative text-white">
+                    Get In Touch
+                    <span class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gold rounded"></span>
+                </h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Have a question or want to work together? Feel free to reach out.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-navy-light p-8 md:p-12 rounded-2xl border border-white/10 shadow-2xl">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-gold">Contact Information</h3>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gold shrink-0">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400 font-medium">Email</h4>
+                            <a href="mailto:vernandafazira@gmail.com" class="text-lg font-medium hover:text-gold transition-colors break-all">vernandafazira@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gold shrink-0">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400 font-medium">Phone</h4>
+                            <a href="tel:+6289638790608" class="text-lg font-medium hover:text-gold transition-colors">+62 896 3879 0608</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-gold shrink-0">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-gray-400 font-medium">Location</h4>
+                            <p class="text-lg font-medium">Jakarta Pusat, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10">
+                        <h4 class="text-sm text-gray-400 font-medium mb-4">Social Profiles</h4>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/vernanda-fazira-943041288" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/vernandafazira" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-navy transition-all">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-navy border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Your Email</label>
+                            <input type="email" id="email" class="w-full bg-navy border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors" placeholder="john@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-navy border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors resize-none" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-gold-hover transition-colors shadow-lg flex justify-center items-center gap-2">
+                            Send Message <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+                        <!-- Simple form feedback message box (hidden by default) -->
+                        <div id="form-msg" class="hidden mt-4 p-3 rounded bg-green-500/20 text-green-300 text-sm text-center border border-green-500/30">
+                            Message sent successfully!
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-lighter py-8 text-center text-gray-400 text-sm border-t border-white/10">
+        <p>&copy; 2026 Vernanda Fazira. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+
+        // Certificate Carousel Scrolling Logic
+        function scrollCerts(direction) {
+            const container = document.getElementById('cert-container');
+            const scrollAmount = 320; // roughly card width + gap
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        // Mock Download CV Function
+        function downloadCV(e) {
+            e.preventDefault();
+            // In a real scenario, this would link to the actual PDF file
+            const msgBox = document.createElement('div');
+            msgBox.className = 'fixed top-24 left-1/2 transform -translate-x-1/2 bg-gold text-navy px-6 py-3 rounded-full shadow-xl font-bold z-50 transition-opacity duration-500';
+            msgBox.innerText = 'Downloading CV_Vernanda_Fazira.pdf...';
+            document.body.appendChild(msgBox);
+            
+            setTimeout(() => {
+                msgBox.style.opacity = '0';
+                setTimeout(() => msgBox.remove(), 500);
+            }, 3000);
+        }
+
+        // Handle Form Submit gracefully (no alert)
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const formMsg = document.getElementById('form-msg');
+            formMsg.classList.remove('hidden');
+            e.target.reset(); // clear form
+            
+            setTimeout(() => {
+                formMsg.classList.add('hidden');
+            }, 4000);
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
